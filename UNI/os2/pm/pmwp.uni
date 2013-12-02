@@ -1,0 +1,7 @@
+group pmwp;
+
+type HOBJECT=LHANDLE;
+
+end.
+
+
