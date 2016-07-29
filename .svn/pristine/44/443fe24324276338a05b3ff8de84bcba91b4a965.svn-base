@@ -1,0 +1,19 @@
+Implemented
+
+   WinDlgBox (windlgbox.c)
+
+
+Unimplemented
+      WinAlarm
+      WinFlashWindow
+      WinMessageBox
+
+
+ Related Functions
+
+      WinCreateDlg
+      WinDefDlgProc
+      WinDismissDlg
+      WinGetDlgMsg
+      WinLoadDlg
+      WinProcessDlg

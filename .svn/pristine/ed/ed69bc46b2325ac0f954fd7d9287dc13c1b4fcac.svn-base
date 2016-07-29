@@ -1,0 +1,17 @@
+#
+# A Makefile for inetd
+# (c) osFree project,
+# author, date
+#
+
+PROJ = inetd
+DESC = INETD superserver
+#defines object file names in format objname.$(O)
+srcfiles = $(p)inetd$(e) $(p)fix_env$(e) $(p)getopt$(e) $(p)pwd$(e) $(p)syslog$(e)
+# defines additional options for C compiler
+ADD_COPT = -i=$(%WATCOM)$(SEP)h$(SEP)os2
+ADD_LINKOPT = lib os2386, tcpip32
+STUB=$(FILESDIR)$(SEP)os2$(SEP)mdos$(SEP)os2stub.exe
+STACKSIZE=65535
+
+!include $(%ROOT)/mk/appsos2.mk
